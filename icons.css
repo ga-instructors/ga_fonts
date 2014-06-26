@@ -1,0 +1,129 @@
+/*                                 _
+ *  __ _  ___ _ __   ___ _ __ __ _| |
+ * / _` |/ _ \ '_ \ / _ \ '__/ _` | |
+ *| (_| |  __/ | | |  __/ | | (_| | |
+ * \__, |\___|_| |_|\___|_|  \__,_|_|
+ * |___/
+ *                              _     _             _         _
+ *  __ _ ___ ___  ___ _ __ ___ | |__ | |_   _   ___| |_ _   _| | ___
+ * / _` / __/ __|/ _ \ '_ ` _ \| '_ \| | | | | / __| __| | | | |/ _ \
+ *| (_| \__ \__ \  __/ | | | | | |_) | | |_| | \__ \ |_| |_| | |  __/
+ * \__,_|___/___/\___|_| |_| |_|_.__/|_|\__, | |___/\__|\__, |_|\___|
+ *                                      |___/           |___/
+ *
+ * Some CSS to kind of put our junk 'on-brand,' as far as type goes...
+ * Copyright (c) [2014], General Assembly.
+ */
+
+ /* ICONS from Iconic: https://useiconic.com/open/ */
+
+@font-face {
+  font-family: 'Iconic';
+  font-weight: normal;
+  font-style: normal;
+  src: url('public/fonts/Iconic.eot');
+  src: url('public/fonts/Iconic.eot?#iefix') format("embedded-opentype"),
+       url('public/fonts/Iconic.svg#iconic') format("svg"),
+       url('public/fonts/Iconic.woff')       format("woff"),
+       url('public/fonts/Iconic.ttf')        format("truetype");
+}
+
+[data-icon]:before {
+  font-family: 'Iconic';
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+}
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: 'Iconic';
+  font-style: normal;
+  speak: none;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+}
+.icon-mail:before         { content: "\40"; }
+.icon-add:before          { content: "\2b"; }
+.icon-search:before       { content: "\23"; }
+.icon-menu:before         { content: "\2a"; }
+.icon-ga-cog-white:before { content: "\21"; }
+.icon-cog:before          { content: "\2699"; }
+.icon-facebook:before     { content: "\28"; }
+.icon-twitter:before      { content: "\29"; }
+.icon-forward:before      { content: "\3e"; }
+.icon-back:before         { content: "\3c"; }
+.icon-calendar:before     { content: "\3f"; }
+.icon-x:before            { content: "\5c"; }
+.icon-add-circle:before   { content: "\3d"; }
+.icon-x-circle:before     { content: "\2d"; }
+.icon-checkmark:before    { content: "\2f"; }
+.icon-location-pin:before { content: "\5e"; }
+.icon-drop-down:before {
+  content: "\3c";
+  display: inline-block;
+}
+.icon-checkmark.success-checkmark:before {
+  position: absolute;
+  left: -2rem;
+  font-size: 1.35rem;
+  line-height: 0.9;
+  color: #23c2bc;
+}
+.icon-checkmark.success-checkmark {
+  position: relative;
+  margin-left: 2rem;
+}
+.icon-location-pin.small-location {
+  font-size: 0.72rem;
+  color: #666;
+}
+.icon-location-pin.small-location:before {
+  padding-right: 0.4em;
+  color: #999;
+}
+
+/* TOPICS */
+
+@font-face {
+  font-family: 'Topics';
+  font-weight: normal;
+  font-style: normal;
+  src: url('public/fonts/Topics.eot');
+  src: url('public/fonts/Topics.eot?#iefix') format("embedded-opentype"),
+       url('public/fonts/Topics.woff')       format("woff"),
+       url('public/fonts/Topics.ttf')        format("truetype"),
+       url('public/fonts/Topics.svg#Topics') format("svg");
+}
+
+[data-icon]:before {
+  font-family: 'Topics';
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+.icon-data-analysis:before, .icon-web-development:before, .icon-user-experience-design:before, .icon-mobile-development:before, .icon-digital-marketing:before, .icon-product-design:before, .icon-business-foundations:before {
+  font-family: 'Topics';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  /*display: block;*/
+}
+.icon-data-analysis:before          { content: "\31"; }
+.icon-web-development:before        { content: "\32"; }
+.icon-user-experience-design:before { content: "\33"; }
+.icon-mobile-development:before     { content: "\34"; }
+.icon-digital-marketing:before      { content: "\35"; }
+.icon-product-design:before         { content: "\36"; }
+.icon-business-foundations:before   { content: "\37"; }
+.icon-medium:before {
+  font-size: 2rem;
+  display: inline-block;
+}

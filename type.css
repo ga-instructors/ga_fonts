@@ -1,0 +1,176 @@
+/*                                 _
+ *  __ _  ___ _ __   ___ _ __ __ _| |
+ * / _` |/ _ \ '_ \ / _ \ '__/ _` | |
+ *| (_| |  __/ | | |  __/ | | (_| | |
+ * \__, |\___|_| |_|\___|_|  \__,_|_|
+ * |___/
+ *                              _     _             _         _
+ *  __ _ ___ ___  ___ _ __ ___ | |__ | |_   _   ___| |_ _   _| | ___
+ * / _` / __/ __|/ _ \ '_ ` _ \| '_ \| | | | | / __| __| | | | |/ _ \
+ *| (_| \__ \__ \  __/ | | | | | |_) | | |_| | \__ \ |_| |_| | |  __/
+ * \__,_|___/___/\___|_| |_| |_|_.__/|_|\__, | |___/\__|\__, |_|\___|
+ *                                      |___/           |___/
+ *
+ * Some CSS to kind of put our junk 'on-brand,' as far as type goes...
+ * Copyright (c) [2014], General Assembly.
+ */
+
+/* Type Fonts:
+   PF Din (Text Compressed Pro): http://www.parachute.gr/typefaces/allfonts/din-text-compressed-pro
+   News 706 (Bitstream): http://www.linotype.com/1085486/News706-family.html,
+                         http://www.fontshop.com/fonts/downloads/bitstream/news_706_std_complete_pack/
+   Inconsolata: https://www.google.com/fonts/specimen/Inconsolata
+*/
+
+@font-face {
+  font-family: 'PFDinTextCompPro';
+  font-weight: bold;
+  font-style:  normal;
+  src: url('public/fonts/PFDinTextCompProBold.eot');
+  src: url('public/fonts/PFDinTextCompProBold.eot?#iefix')               format("embedded-opentype"),
+       url('public/fonts/PFDinTextCompProBold.woff')                     format("woff"),
+       url('public/fonts/PFDinTextCompProBold.ttf')                      format("truetype"),
+       url('public/fonts/PFDinTextCompProBold.svg#PFDinTextCompProBold') format("svg");
+}
+@font-face {
+  font-family: 'PFDinTextCompPro';
+  font-weight: normal;
+  font-style: normal;
+  src: url('public/fonts/PFDinTextCompProMedium.eot');
+  src: url('public/fonts/PFDinTextCompProMedium.eot?#iefix')                 format("embedded-opentype"),
+       url('public/fonts/PFDinTextCompProMedium.woff')                       format("woff"),
+       url('public/fonts/PFDinTextCompProMedium.ttf')                        format("truetype"),
+       url('public/fonts/PFDinTextCompProMedium.svg#PFDinTextCompProMedium') format("svg");
+}
+@font-face {
+  font-family: 'PFDinTextCompProLight';
+  font-weight: normal;
+  font-style: normal;
+  src: url('public/fonts/PFDinTextCompProLight.eot');
+  src: url('public/fonts/PFDinTextCompProLight.eot?#iefix')                format("embedded-opentype"),
+       url('public/fonts/PFDinTextCompProLight.woff')                      format("woff"),
+       url('public/fonts/PFDinTextCompProLight.ttf')                       format("truetype"),
+       url('public/fonts/PFDinTextCompProLight.svg#PFDinTextCompProLight') format("svg");
+}
+@font-face {
+  font-family: 'News706BT';
+  font-weight: normal;
+  font-style: normal;
+  src: url('public/fonts/News706BT-RomanC.eot');
+  src: url('public/fonts/News706BT-RomanC.eot?#iefix') format("embedded-opentype"),
+       url('public/fonts/News706BT-RomanC.woff')       format("woff"),
+       url('public/fonts/News706BT-RomanC.ttf')        format("truetype"),
+       url('public/fonts/News706BT-RomanC.svg#wf')     format("svg");
+}
+@font-face {
+  font-family: 'News706BT';
+  font-weight: normal;
+  font-style: italic;
+  src: url('public/fonts/News706BT-ItalicC.eot');
+  src: url('public/fonts/News706BT-ItalicC.eot?#iefix') format("embedded-opentype"),
+       url('public/fonts/News706BT-ItalicC.woff')       format("woff"),
+       url('public/fonts/News706BT-ItalicC.ttf')        format("truetype"),
+       url('public/fonts/News706BT-ItalicC.svg#wf')     format("svg");
+}
+@font-face {
+  font-family: 'News706BT';
+  font-weight: bold;
+  font-style: normal;
+  src: url('public/fonts/News706BT-BoldC.eot');
+  src: url('public/fonts/News706BT-BoldC.eot?#iefix') format("embedded-opentype"),
+       url('public/fonts/News706BT-BoldC.woff')       format("woff"),
+       url('public/fonts/News706BT-BoldC.ttf')        format("truetype"),
+       url('public/fonts/News706BT-BoldC.svg#wf')     format("svg");
+}
+@font-face {
+  font-family: 'Inconsolata';
+  font-weight: normal;
+  font-style: normal;
+  src: url('public/fonts/InconsolataMedium.eot');
+  src: url('public/fonts/InconsolataMedium.eot?#iefix')            format("embedded-opentype"),
+       url('public/fonts/InconsolataMedium.woff')                  format("woff"),
+       url('public/fonts/InconsolataMedium.ttf')                   format("truetype"),
+       url('public/fonts/InconsolataMedium.svg#InconsolataMedium') format("svg");
+}
+
+body {
+  /*font-family: "News706BT", Georgia;*/
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  /*font-family: "PFDinTextCompPro", Impact, Arial;*/
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 0.9;
+  margin: 1rem 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+@media screen and (min-width: 720px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+h2 {
+  font-size: 2.25rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.35rem;
+  line-height: 1;
+}
+
+fieldset legend {
+  font-family: "PFDinTextCompPro", Impact, Arial;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.35rem;
+  line-height: 1;
+  padding: 0;
+  margin: 1rem 0 2rem 0;
+}
+
+fieldset legend+p {
+  margin-top: 0;
+}
+
+fieldset div.question-group {
+  margin-top: 3rem;
+}
+
+fieldset div.question-group:nth-child(1) {
+  margin-top: 0;
+}
+
+p.small {
+  font-size: 0.85rem;
+}
+p.normal {
+  font-size: 1rem;
+}
+p.medium {
+  font-size: 1.35rem;
+  line-height: 1.4;
+}
+
+/* #000 : black */
+/* #fff0a0 : pale yellow */
+/* #867100 : brownish */
+/* #23c2bc : twitter seafoam */
+/* #89e8da : another seafoam */
+/* #1a8e8a : twitter seafoam hover */
+/* #e2e2e2 : light gray */
+/* #999 : dark gray */
+/* #fff : white */
+/* #f03 : red */
